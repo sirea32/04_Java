@@ -11,7 +11,7 @@ public class ArrayRun {
 		
 		
 //		ex1.method1();
-//		ex1.method2();
+		ex1.method2();
 //		ex1.method3();
 //		ex1.method4();
 		
@@ -21,7 +21,7 @@ public class ArrayRun {
 		
 		
 //		ex2.method1();
-		ex2.method2();
+//		ex2.method2();
 //		ex2.method3();
 //		ex2.method4();
 //		ex2.method5();
