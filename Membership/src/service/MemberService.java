@@ -31,4 +31,55 @@ public interface MemberService {
 	 * @return memberList
 	 */
 	public abstract List<Member> getMemberList();
+	
+	
+	
+	/**
+	 * searchName과 같은 이름을 지닌 회원 조회
+	 * - 동명이인이 존재하면 모두 조회 
+	 * @param searchName
+	 * @return searchList (저장된 요소 0개 이상)
+	 */
+	List<Member> selectName(String searchName);
+
+
+	/**
+	 * 전달받은 회원의 금액 누적하기
+	 * @param target
+	 * @param acc
+	 * @return 결과 문자열 반환
+	 * @throws IOException
+	 */
+	/* public abstract */ String updateAmount(Member target, int acc) throws IOException;
+	// public abstract는 생략 가능 기본으로 있다고 정해져있기에 생략안해도 해도 된다 둘다 가능
+
+
+	/**
+	 * 회원 정보(전화번호) 수정
+	 * @param target
+	 * @param phone
+	 * @return 결과 문자열
+	 * @throws IOException
+	 */
+	String updateMember(Member target, String phone) throws IOException;
+
+
+	/**
+	 * 회원 탈퇴
+	 * @param target
+	 * @return 결과 문자열
+	 * @throws IOException
+	 */
+	public abstract String deleteMember(Member target) throws IOException;
+	
+	
+//	/**
+//	 * 금액을 전달 받아
+//	 * 해당 금액대에 맞는 등급을 반환
+//	 * @param amount
+//	 * @return
+//	 */
+//	String selectGrade(int amount);
+//	요건 안할거라 주석처리 안해두면 에러~!
+	
 }
